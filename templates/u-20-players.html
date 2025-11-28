@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="nav">
+        <h2>– U-20 PLAYERS –</h2>
+        <table class="content-nav">
+            <thead>
+            <tr>
+                <td>#</td>
+                <td>player</td>
+                <td>age</td>
+                <td>
+                    club <br/>
+                    mill. euro
+                </td>
+                <td>
+                    transfer value, <br/>
+                    mill. euro
+                </td>
+            </tr>
+            </thead>
+        </table>
+    </div>
+    <div class="content">
+        <table class="players" style="margin-top: 100px">
+            {% for player in players %}
+                <tr>
+                    <td>{{ forloop.counter }}</td>
+                    <td>{{ player.name }}</td>
+                    <td>{{ player.age }}</td>
+                    <td>{{ player.club.name }}</td>
+                    <td>{{ player.price }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae soluta
+            sequi quia eos cupiditate rerum accusantium odit enim, expedita,
+            architecto error dignissimos voluptatibus. Nisi illo, maiores fugit
+            amet neque eveniet!
+        </p>
+    </div>
+{% endblock %}

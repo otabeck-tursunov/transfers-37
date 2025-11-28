@@ -1,9 +1,8 @@
 {% extends 'base.html' %}
 
 {% block content %}
-
     <div class="nav">
-        <h2>– LATEST TRANSFERS –</h2>
+        <h2>– TOP-150 ACCURATE PREDICTIONS –</h2>
         <table class="content-nav">
             <thead>
             <tr>
@@ -20,28 +19,33 @@
                     mill. euro, <br/>
                     by tft.com
                 </td>
+                <td>
+                    divergence, <br> %
+                </td>
             </tr>
             </thead>
         </table>
     </div>
     <div class="latest-transfers">
 
-        <table class="players" style="margin-top: 100px;">
-            {% for transfer in transfers %}
+        <table class="top-players" style="margin-top: 100px">
+            {% for tranfer in top_accurate_transfers %}
                 <tr>
                     <td>{{ forloop.counter }}</td>
-                    <td>{{ transfer.player.name }}</td>
-                    <td>{{ transfer.old_club.name }}</td>
-                    <td>{{ transfer.new_club.name }}</td>
-                    <td>{{ transfer.price }}</td>
-                    <td>{{ transfer.price_tft }}</td>
+                    <td>{{ tranfer.player.name }}</td>
+                    <td>{{ tranfer.old_club.name }}</td>
+                    <td>{{ tranfer.new_club.name }}</td>
+                    <td>{{ tranfer.price }}</td>
+                    <td>{{ tranfer.price_tft }}</td>
+                    <td>{{ tranfer.moa|floatformat:2 }}</td>
                 </tr>
             {% endfor %}
         </table>
         <hr>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae soluta sequi quia eos cupiditate rerum
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae soluta sequi quia eos cupiditate rerum
             accusantium odit enim, expedita, architecto error dignissimos voluptatibus. Nisi illo, maiores fugit amet
-            neque eveniet!</p>
+            neque eveniet!
+        </p>
     </div>
-
 {% endblock %}

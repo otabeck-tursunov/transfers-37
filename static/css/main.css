@@ -11,7 +11,7 @@
 }
 .container .navbar {
   width: 100%;
-  background-color: red;
+  background-color: indigo;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -76,7 +76,7 @@
   text-decoration: none;
   width: 380px;
   height: 140px;
-  background-color: red;
+  background-color: indigo;
   border-radius: 6px;
   font-size: 40px;
   display: flex;
@@ -110,14 +110,14 @@
 .country-clubs h2:hover {
   border-radius: 5px;
   padding-left: 10px;
-  background-color: red;
+  background-color: indigo;
 }
 .country-clubs h2:hover a {
   color: white;
 }
 .country-clubs #title {
   font-size: 30px;
-  background-color: red;
+  background-color: indigo;
   color: white;
   text-align: center;
   line-height: 40px;
@@ -148,7 +148,7 @@
 .country-clubs .country h3:hover {
   border-radius: 5px;
   padding-left: 10px;
-  background-color: red;
+  background-color: indigo;
 }
 .country-clubs .country h3:hover a {
   color: white;
@@ -161,7 +161,7 @@
 }
 .clubs-info h2 {
   text-align: center;
-  color: red;
+  color: indigo;
   margin: 10px;
 }
 
@@ -205,7 +205,7 @@
 }
 .nav h2 {
   text-align: center;
-  color: red;
+  color: indigo;
   line-height: 50px;
   padding-top: 30px;
   font-size: 22px;
@@ -333,7 +333,7 @@
 }
 .content-nav tr td {
   width: 140px;
-  color: red;
+  color: indigo;
   text-align: center;
 }
 .content-nav tr td:nth-child(1) {
@@ -353,17 +353,17 @@
 }
 .clubs .club {
   width: 170px;
-  border-top: 2px solid red;
-  border-bottom: 2px solid red;
+  border-top: 2px solid indigo;
+  border-bottom: 2px solid indigo;
   transition: all 0.2s ease-in-out;
   /* margin-right: 10% !important; */
 }
 .clubs .club:hover {
   border: none;
   border-radius: 5px;
-  border-top: 2px solid red;
-  border-bottom: 2px solid red;
-  border-left: 4px solid red;
+  border-top: 2px solid indigo;
+  border-bottom: 2px solid indigo;
+  border-left: 4px solid indigo;
 }
 .clubs .club a {
   display: flex;
@@ -376,7 +376,7 @@
   word-spacing: 4px;
 }
 .clubs .club a:hover {
-  color: red !important;
+  color: indigo !important;
 }
 .clubs .club a img {
   width: 55px;
@@ -417,7 +417,7 @@
 
 .footer {
   width: 100%;
-  background-color: red;
+  background-color: indigo;
   height: 80px;
   display: flex;
   align-items: center;
@@ -533,7 +533,7 @@
   }
   .country-menu h3 a:hover,
   .navbar-menu h3 a:hover {
-    background-color: red;
+    background-color: indigo;
   }
 
   .navbar-menu {
@@ -557,7 +557,7 @@
   }
 
   .navbar-menu.active {
-    background-color: red;
+    background-color: indigo;
     right: 0px;
   }
 
@@ -588,7 +588,7 @@
   }
   .content-nav tr td {
     width: 15%;
-    color: red;
+    color: indigo;
     text-align: center;
     font-size: 11px;
   }

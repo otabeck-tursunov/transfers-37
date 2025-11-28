@@ -32,7 +32,7 @@ class Player(models.Model):
     name = models.CharField(max_length=255)
     number = models.PositiveSmallIntegerField(validators=[MinValueValidator(1), MaxValueValidator(99)])
     position = models.CharField(max_length=255, blank=True, null=True)
-    birthdate = models.DateField(blank=True, null=True)
+    birth_date = models.DateField(blank=True, null=True)
     price = models.FloatField(validators=[MinValueValidator(0)])
     country = models.ForeignKey(Country, on_delete=models.CASCADE)
     club = models.ForeignKey(Club, on_delete=models.CASCADE)

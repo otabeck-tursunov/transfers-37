@@ -23,7 +23,7 @@ class ClubAdmin(admin.ModelAdmin):
 
 @admin.register(Player)
 class PlayerAdmin(admin.ModelAdmin):
-    list_display = ('name', 'number', 'position', 'birthdate', 'price', 'country',)
+    list_display = ('name', 'number', 'position', 'birth_date', 'price', 'country',)
     list_filter = ('country', 'club', 'position', 'number')
     search_fields = ('name',)
 
